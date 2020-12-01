@@ -1,0 +1,43 @@
+html {
+	cursor: url(../images/bug_zapper.png) 30 30, auto;
+}
+body {
+	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
+}
+.gnat0 {
+	height: 50px;
+	width: 50px;
+}
+.gnat1 {
+	height: 70px;
+	width: 70px;
+}
+.gnat2 {
+	height: 90px;
+	width: 90px;
+}
+/*-- this definition isn't necessary because is the pattern --*/
+.sideA {
+	transform: scaleX(1);
+}
+.sideB {
+	transform: scaleX(-1);
+}
+.box{
+	position: absolute;
+	width: 190px;
+	padding: 10px;
+	bottom: 10px;
+	border-top: solid 1px #fff;
+	background-color: #fff; 
+	opacity: 0.7;
+}
+.lifes {
+	float: left;
+}
+.time_left {
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+}

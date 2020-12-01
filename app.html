@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>KILL GNAT</title>
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<script src="app.js"></script>
+
+	</head>
+	<body onresize="adjustGameScreen()">
+
+		<div class="box">
+			<div class="lifes">
+				<img id="life1" src="images/heart.png" />
+				<img id="life2" src="images/heart.png" />
+				<img id="life3" src="images/heart.png" />
+			</div>
+			<div class="time_left">
+				Time left: <span id="chronometer"></span>
+			</div>
+		</div>
+
+		<script>
+
+			document.getElementById("chronometer").innerHTML = time
+			
+			var clearGnat = setInterval(function() {
+				randomPosition()
+			}
+			, createGnatLevel)
+
+		</script>
+		
+	</body>
+</html>
